@@ -67,6 +67,26 @@
       border-radius: 8px;
       margin-top: 10px;
     }
+    .line-meaning {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap; /* allows wrapping on smaller screens */
+      padding: 10px 0;
+}
+
+    .lyric {
+      flex: 1;
+      font-weight: bold;
+      font-size: 1.1em;
+}
+
+    .meaning {
+      flex: 1;
+      font-style: italic;
+      color: #ccc;
+}
+
     .interpretation {
       font-style: italic;
       margin-top: 5px;
@@ -90,19 +110,24 @@
   <div class="content-container">
     <!-- Song example block -->
     <div class="song-container">
-      <div class="song-title">Moon on the Water</div>
-      <div class="artist">by Sowelu</div>
+      <div class="song-title">Ultra Violence</div>
+      <div class="artist">by Lana Del Rey</div>
 
       <!-- First lyric section -->
       <div class="lyrics-section">
-        <p><strong>"I’m falling in love with the moon on the water"</strong></p>
-        <div class="interpretation">Represents peaceful longing and self-reflection.</div>
-        <img src="moon-on-water.jpg" alt="Moon reflection on still water" />
+      <div class="line-meaning">
+        <div class="lyric">"I’m falling in love with the moon on the water"</div>
+        <div class="meaning">Represents peaceful longing and self-reflection.</div>
       </div>
+        <div class="interpretation">The moon symbolizes a distant love, evoking tranquility.</div>
+        <img src="moon-water.jpg" alt="Moon reflecting on water" />
 
       <!-- Second lyric section -->
       <div class="lyrics-section">
-        <p><strong>"The stillness calms my heart"</strong></p>
+        <div class="line-meaning">
+          <div class="lyric">"The stillness calms my heart"</div>
+          <div class="meaning">Represents emotional healing and tranquility.</div>
+        </div>
         <div class="interpretation">The tranquility symbolizes emotional healing.</div>
         <img src="calm-lake.jpg" alt="Calm lake at night" />
       </div>
