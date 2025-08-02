@@ -67,29 +67,23 @@
       border-radius: 8px;
       margin-top: 10px;
     }
+
+    /* --- Side-by-side lyric and interpretation layout --- */
     .line-meaning {
       display: flex;
       justify-content: space-between;
       gap: 20px;
-      flex-wrap: wrap; /* allows wrapping on smaller screens */
+      flex-wrap: wrap;
       padding: 10px 0;
-}
-
+    }
     .lyric {
       flex: 1;
       font-weight: bold;
       font-size: 1.1em;
-}
-
+    }
     .meaning {
       flex: 1;
       font-style: italic;
-      color: #ccc;
-}
-
-    .interpretation {
-      font-style: italic;
-      margin-top: 5px;
       color: #ccc;
     }
   </style>
@@ -97,7 +91,7 @@
 <body>
   <!-- Header of the page -->
   <header>
-    <h1>George's Analysis on LDR.......(mainly Lana)</h1>
+    <h1>Song Meaning Gallery</h1>
   </header>
 
   <!-- Navigation bar linking to other pages -->
@@ -110,25 +104,24 @@
   <div class="content-container">
     <!-- Song example block -->
     <div class="song-container">
-      <div class="song-title">Ultra Violence</div>
-      <div class="artist">by Lana Del Rey</div>
+      <div class="song-title">Moon on the Water</div>
+      <div class="artist">by Sowelu</div>
 
       <!-- First lyric section -->
       <div class="lyrics-section">
-      <div class="line-meaning">
-        <div class="lyric">"I’m falling in love with the moon on the water"</div>
-        <div class="meaning">Represents peaceful longing and self-reflection.</div>
+        <div class="line-meaning">
+          <div class="lyric">"I’m falling in love with the moon on the water"</div>
+          <div class="meaning">Represents peaceful longing and self-reflection.</div>
+        </div>
+        <img src="moon-on-water.jpg" alt="Moon reflection on still water" />
       </div>
-        <div class="interpretation">The moon symbolizes a distant love, evoking tranquility.</div>
-        <img src="moon-water.jpg" alt="Moon reflecting on water" />
 
       <!-- Second lyric section -->
       <div class="lyrics-section">
         <div class="line-meaning">
           <div class="lyric">"The stillness calms my heart"</div>
-          <div class="meaning">Represents emotional healing and tranquility.</div>
+          <div class="meaning">The tranquility symbolizes emotional healing.</div>
         </div>
-        <div class="interpretation">The tranquility symbolizes emotional healing.</div>
         <img src="calm-lake.jpg" alt="Calm lake at night" />
       </div>
     </div>
