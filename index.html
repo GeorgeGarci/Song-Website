@@ -5,6 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>George's Analysis of LDR Playlist</title>
   <style>
+    @font-face {
+      font-family: 'Rainbow';
+      src: url('fonts/Rainbow.ttf') format('truetype');
+    }
+
+    .rainbow-title {
+      font-family: 'Rainbow', cursive;
+    }
+
     /* --- Global Styles --- */
     body {
       font-family: Arial, sans-serif;
@@ -63,10 +72,15 @@
       margin-bottom: 30px;
     }
     .lyrics-section img {
-      max-width: 100%;
+      width: 400px;
+      height: auto;
       border-radius: 8px;
       margin-top: 10px;
+      display: block;         /* Makes image a block-level element */
+      margin-left: auto;      /* Automatically adjust left margin */
+      margin-right: auto;     /* Automatically adjust right margin */
     }
+
 
     /* --- Side-by-side lyric and interpretation layout --- */
     .line-meaning {
@@ -104,7 +118,7 @@
   <div class="content-container">
     <!-- Song example block -->
     <div class="song-container">
-      <div class="song-title">Ultraviolence</div>
+      <div class="song-title rainbow-title">Ultraviolence</div>
       <div class="artist">by Lana Del Rey</div>
 
       <!-- First lyric section -->
